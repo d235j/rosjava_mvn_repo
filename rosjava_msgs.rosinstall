@@ -29,7 +29,7 @@
 - git:
     local-name: concert_msgs
     uri: https://github.com/yujinrobot-release/rocon_msgs-release.git
-    version: release/hydro/concert_msgs/0.5.2-0
+    version: release/hydro/concert_msgs/0.6.0-0
 - git:
     local-name: console_bridge
     uri: https://github.com/ros-gbp/console_bridge-release.git
@@ -53,11 +53,11 @@
 - git:
     local-name: gateway_msgs
     uri: https://github.com/yujinrobot-release/rocon_msgs-release.git
-    version: release/hydro/gateway_msgs/0.5.2-0
+    version: release/hydro/gateway_msgs/0.6.0-0
 - git:
     local-name: gazebo_msgs
     uri: https://github.com/ros-gbp/gazebo_ros_pkgs-release.git
-    version: release/hydro/gazebo_msgs/2.2.1-0
+    version: release/hydro/gazebo_msgs/2.2.1-1
 - git:
     local-name: gencpp
     uri: https://github.com/ros-gbp/gencpp-release.git
@@ -94,6 +94,10 @@
     local-name: map_msgs
     uri: https://github.com/ros-gbp/map_msgs-release.git
     version: release/hydro/map_msgs/0.0.2-0
+- git:
+    local-name: map_store
+    uri: https://github.com/ros-gbp/map_store-release.git
+    version: release/hydro/map_store/0.3.0-0
 - git:
     local-name: message_filters
     uri: https://github.com/ros-gbp/ros_comm-release.git
@@ -137,7 +141,7 @@
 - git:
     local-name: pr2_controllers_msgs
     uri: https://github.com/ros-gbp/pr2_controllers-release.git
-    version: release/hydro/pr2_controllers_msgs/1.10.5-0
+    version: release/hydro/pr2_controllers_msgs/1.10.6-0
 - git:
     local-name: pr2_mechanism_msgs
     uri: https://github.com/ros-gbp/pr2_mechanism_msgs-release.git
@@ -149,11 +153,11 @@
 - git:
     local-name: rocon_app_manager_msgs
     uri: https://github.com/yujinrobot-release/rocon_msgs-release.git
-    version: release/hydro/rocon_app_manager_msgs/0.5.2-0
+    version: release/hydro/rocon_app_manager_msgs/0.6.0-0
 - git:
     local-name: rocon_msgs
     uri: https://github.com/yujinrobot-release/rocon_msgs-release.git
-    version: release/hydro/rocon_msgs/0.5.2-0
+    version: release/hydro/rocon_msgs/0.6.0-0
 - git:
     local-name: rosclean
     uri: https://github.com/ros-gbp/ros-release.git
@@ -298,6 +302,10 @@
     local-name: visualization_msgs
     uri: https://github.com/ros-gbp/common_msgs-release.git
     version: release/hydro/visualization_msgs/1.10.0-0
+- git:
+    local-name: warehouse_ros
+    uri: https://github.com/ros-gbp/warehouse-release.git
+    version: release/hydro/warehouse_ros/0.8.4-0
 - git:
     local-name: xmlrpcpp
     uri: https://github.com/ros-gbp/ros_comm-release.git
