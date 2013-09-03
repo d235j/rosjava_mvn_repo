@@ -1,3 +1,7 @@
+rosjava_mvn_repo
+================
 
+Repo of Maven artifacts for building android apps.
 
-Refer to the instructions in the [master readme](https://github.com/rosjava/rosjava_mvn_repo/blob/master/README.md).
+For now we are just using a single branch - there does not seem to be a need to modularise them to be rosdistro based.
+
