@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# This syncs with a locally deployed rosjava/android maven repo. Note that
+# this only syncs from the locally deployed repo -> this repo, not the
+# other way around.
+# 
+# Usage:
+#   sync_repo <dir of local maven repo>
+#
+# Make sure to add a / to the end of the argument if you want to exclude
+# that directory.
+#
+
+if [ $# -lt 1 ]; then
+  export MAVEN_REPO=/mnt/ros/rosjava/install/share/maven/
+else
+  export MAVEN_REPO=$1
+  # Should validate the directory here
+fi
+
+# Options
+# --delete    : files from the destination directories
+# --recursive : recurse into directories
+# --links     : copy symlinks as symlinks
+ 
+export OPTIONS="--recursive --links --verbose"
+
+# Unused, but just in case we want to use in the future.
+EXCLUDES=(
+  --exclude '*.pyc'
+  --exclude '*.svn'
+)
+
+rsync ${OPTIONS} "${EXCLUDES[@]}" ${MAVEN_REPO} .
