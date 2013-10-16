@@ -56,7 +56,7 @@ echo
 echo -en "${yellow}Do you want to commit upgraded and new artifacts [y/N]${reset}?"
 read commit
 case $commit in
-    [Yy]* ) read -p "Provide a commit message: " msg; git commit -m "${msg}"; break;;
+    [Yy]* ) read -p "Provide a commit message: " msg; git commit -m "${msg}";;
     * ) exit 0;;
 esac
 
@@ -64,7 +64,7 @@ echo
 echo -en "${yellow}Push to the github repository?[y/N]${reset}?"
 read push
 case $push in
-    [Yy]* ) git push; break;;
+    [Yy]* ) git push;;
     * ) exit 0;;
 esac
 
@@ -81,6 +81,6 @@ echo "upgraded, just 'touched'. It is safe to clean them."
 echo -en "${yellow}Do you want to clean these [y/N]?$reset "
 read clean
 case $clean in
-    [Yy]* ) git checkout .; break;;
+    [Yy]* ) git checkout .;;
     * ) exit 0;;
 esac
