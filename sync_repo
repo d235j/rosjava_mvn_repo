@@ -14,7 +14,10 @@
 if [ $# -lt 1 ]; then
   export MAVEN_REPO=/mnt/ros/rosjava/install/share/maven/
 else
-  export MAVEN_REPO=$1
+  exported_dir=$1
+  echo $exported_dir
+  [[ ${exported_dir} != */ ]] && exported_dir="${exported_dir}"/
+  export MAVEN_REPO=${exported_dir}
   # Should validate the directory here
 fi
 
