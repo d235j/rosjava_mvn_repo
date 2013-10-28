@@ -16,7 +16,7 @@
     <dependency>
       <groupId>org.ros.rosjava_core</groupId>
       <artifactId>rosjava_geometry</artifactId>
-      <version>0.1.+</version>
+      <version>[0.1,0.2)</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>
